@@ -4,7 +4,10 @@
   "description": "Lab1",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "frontend": "nodemon web_application/frontend/main.js use_db=false -e js,ejs",
+    "frontend_db": "nodemon web_application/frontend/main.js use_db=true -e js,ejs",
+    "backend": "nodemon web_application/backend/main.js -e js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +20,17 @@
   },
   "homepage": "https://github.com/radyvoniuk/lab1#readme",
   "dependencies": {
-    "eslint": "^8.35.0",
-    "eslint-config-standard-with-typescript": "^34.0.0"
+    "bootstrap": "^5.0.0-beta3",
+    "cors": "^2.8.5",
+    "custom_module": "file: custom_module",
+    "ejs": "^3.1.6",
+    "eslint-config-standard-with-typescript": "^34.0.0",
+    "express": "^4.17.1",
+    "jquery": "^3.6.0",
+    "mongodb": "^3.6.6",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {
+    "eslint": "^8.37.0"
   }
 }

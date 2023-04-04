@@ -12,6 +12,13 @@
         "sourceType": "module"
     },
     "rules": {
+        "semi":0,
+        "no-unused-vars": ["error", { "vars": "local", "args": "after-used", "ignoreRestSiblings": true }],
+        "space-before-function-paren": ["error", {
+            "anonymous": "always",
+            "named": "never",
+            "asyncArrow": "always"
+          }]
     }
     
 }
